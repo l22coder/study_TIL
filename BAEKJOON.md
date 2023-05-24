@@ -32,7 +32,7 @@
  - split() 매서드는 배열을 리턴하여 입력값을 다양하게 가공할 수 있다.
 
   > const charArray = input.toString().split('');
-  // 입력값이 한 단어이고,각 철자를 배열로 받는 경우
+  // 입력값이 한 단어이고, 각 철자를 배열로 받는 경우
 
   > const wordArray = input.toString().split(' ');
   // 입력값이 한 줄의 여러 단어이고, 각 단어를 배열로 받는 경우
