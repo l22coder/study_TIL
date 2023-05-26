@@ -1,4 +1,4 @@
-## 백준 1단계 - 입출력과 사칙연산
+## 백준 1단계 - 입출력과 사칙연산 - 문제풀이
 
 > 2557. Hello World
  - 문제 : Hello World!를 출력하시오.
@@ -103,5 +103,39 @@ console.log(+input[0] * +input[1][2]);
 console.log(+input[0] * +input[1][1]);
 console.log(+input[0] * +input[1][0]);
 console.log(+input[0] * +input[1]);
+```
+##
+> 11382. 꼬마 정민
+ - 문제 : 꼬마 정민이는 이제 A + B 정도는 쉽게 계산할 수 있다. 이제 A + B + C를 계산할 차례이다!
+
+**풀이**
+```
+console.log(require('fs').readFileSync('/dev/stdin').toString().trim().split(' ').reduce((a, c) => +a + +c));
+```
+##
+> 10171. 고양이
+ - 문제 : 아래 예제와 같이 고양이를 출력하시오.
+ - 예제 출력 : ![image](https://github.com/JavaScript-Coding-Test-Study/lsh/assets/133360417/b909ef24-6590-44d8-a951-923a605f4caa)
+ 
+**풀이**
+```
+console.log(`\\    /\\
+ )  ( ')
+(  /  )
+ \\(__)|
+`)
+```
+##
+> 10172. 개
+ - 문제 : 아래 예제와 같이 개를 출력하시오.
+ - 예제 출력 : ![image](https://github.com/JavaScript-Coding-Test-Study/lsh/assets/133360417/19983bcc-9ce0-49be-a5d9-52759333312d)
+ 
+**풀이**
+```
+console.log(`|\\_/|
+|q p|   /}
+( 0 )"""\\
+|"^"\`    |
+||_/=\\\\__|`)
 ```
 ##
