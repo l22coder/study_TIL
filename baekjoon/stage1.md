@@ -93,14 +93,15 @@ console.log(((input[0] % input[2]) * (input[1] % input[2])) % input[2]);
 > 2588. 곱셈
  - 문제 : (세 자리 수) × (세 자리 수)는 다음과 같은 과정을 통하여 이루어진다.
 ![image](https://github.com/JavaScript-Coding-Test-Study/lsh/assets/133360417/2df76533-ceb8-4e54-8021-dec359a6f1fe)
+
 (1)과 (2)위치에 들어갈 세 자리 자연수가 주어질 때 (3), (4), (5), (6)위치에 들어갈 값을 구하는 프로그램을 작성하시오.
 
 **풀이**
 ```
-const input = require('fs').readFileSync('/dev/stdin').toString().trim().split(' ').map(Number);
-console.log((input[0] + input[1]) % input[2]);
-console.log(((input[0] % input[2]) + (input[1] % input[2])) % input[2]);
-console.log((input[0] * input[1]) % input[2]);
-console.log(((input[0] % input[2]) * (input[1] % input[2])) % input[2]);
+const input = require('fs').readFileSync('/dev/stdin').toString().trim().split('\n');
+console.log(+input[0] * +input[1][2]);
+console.log(+input[0] * +input[1][1]);
+console.log(+input[0] * +input[1][0]);
+console.log(+input[0] * +input[1]);
 ```
 ##
