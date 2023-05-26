@@ -1,11 +1,8 @@
 ## ※백준에서 JavaScript 코딩테스트
 
- - 언어 : nodeJS 사용하기
+ - 언어 : Node.js 사용하기
  - 단계별로 풀어보기
- - 입출력 방법은 아래와 같이 두가지가 있는데, fs모듈이 시간효율성이 좋다고 한다.
-   1. fs 모듈
-   2. readline 모듈
-
+  
 ## 1. 출력
 
  - nodeJS 출력은 console.log()를 사용하면 된다.
@@ -17,10 +14,9 @@
 
 ## 2. 입력
  
- - fs.readFileSync()를 통해 입력값을 받는다.
- - '/dev/stdin' 백준 사이트의 입력값 경로
-   (로컬 환경에서 실행 시에는 자신의 입력 파일 위치)
- - 사용 목적에 따라 사용할 데이터 형태로 가공
+ - 백준에서 Node.js로 입력값을 받기 위해선 readline 모듈 또는 fs 모듈을 사용하면 된다. 
+   이 둘 중 fs모듈이 더 빠르므로 fs를 사용하도록 한다.
+ - fs는 FileSystem의 약자로 파일 처리를 하는 모듈로, 직접 입력 파일을 읽어와서 처리한다.
 
 ```
   const fs = require('fs');
@@ -28,9 +24,6 @@
 
   const input = fs.readFileSync('/dev/stdin');
   // 백준의 입력값을 readFileSync 함수를 통해 파일의 입력값을 받아온다.
-  
-  const input = require('fs).readFileSync('/dev/stdin');
-  // 한 줄로 입력값 받기
 ```
 
 ## 3. 입력값 가공
@@ -62,3 +55,7 @@ const [m, ...m_arr] = input.slice(n+1);
 
 // 2~6에서 입력받는 값들을 모두 String에서 Number로 바꾸려면 split()뒤에 .map(v => +v)를 추가
 ```
+
+
+## 참고
+https://tesseractjh.tistory.com/39
