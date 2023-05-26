@@ -24,6 +24,9 @@
 
   > const input = fs.readFileSync('/dev/stdin');
   // 백준의 입력값을 readFileSync 함수를 통해 파일의 입력값을 받아온다.
+  
+  > const input = require('fs).readFileSync('/dev/stdin');
+  // 한 줄로 입력값 받기
    
 
 ## 3. 입력값 가공
