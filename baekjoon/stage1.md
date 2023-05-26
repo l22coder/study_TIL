@@ -77,11 +77,30 @@ console.log(+input - 543);
 ```
 ##
 > 10430. 나머지
- - (A+B)%C는 ((A%C) + (B%C))%C 와 같을까? (A×B)%C는 ((A%C) × (B%C))%C 와 같을까?
+ - 문제 : (A+B)%C는 ((A%C) + (B%C))%C 와 같을까? (A×B)%C는 ((A%C) × (B%C))%C 와 같을까?
  세 수 A, B, C가 주어졌을 때, 위의 네 가지 값을 구하는 프로그램을 작성하시오.
+ - 출력 : 첫째 줄에 (A+B)%C, 둘째 줄에 ((A%C) + (B%C))%C, 셋째 줄에 (A×B)%C, 넷째 줄에 ((A%C) × (B%C))%C를 출력한다.
 
 **풀이**
 ```
-const input = require('fs').readFileSync('/dev/stdin').toString().trim();
-console.log(+input - 543);
+const input = require('fs').readFileSync('/dev/stdin').toString().trim().split(' ').map(Number);
+console.log((input[0] + input[1]) % input[2]);
+console.log(((input[0] % input[2]) + (input[1] % input[2])) % input[2]);
+console.log((input[0] * input[1]) % input[2]);
+console.log(((input[0] % input[2]) * (input[1] % input[2])) % input[2]);
 ```
+##
+> 2588. 곱셈
+ - 문제 : (세 자리 수) × (세 자리 수)는 다음과 같은 과정을 통하여 이루어진다.
+![image](https://github.com/JavaScript-Coding-Test-Study/lsh/assets/133360417/2df76533-ceb8-4e54-8021-dec359a6f1fe)
+(1)과 (2)위치에 들어갈 세 자리 자연수가 주어질 때 (3), (4), (5), (6)위치에 들어갈 값을 구하는 프로그램을 작성하시오.
+
+**풀이**
+```
+const input = require('fs').readFileSync('/dev/stdin').toString().trim().split(' ').map(Number);
+console.log((input[0] + input[1]) % input[2]);
+console.log(((input[0] % input[2]) + (input[1] % input[2])) % input[2]);
+console.log((input[0] * input[1]) % input[2]);
+console.log(((input[0] % input[2]) * (input[1] % input[2])) % input[2]);
+```
+##
